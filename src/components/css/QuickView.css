@@ -1,0 +1,81 @@
+.quickView {
+  position: fixed;
+  z-index: 2;
+  background-color: #111;
+  border-radius: 10px;
+  height: calc(100vh - 20px);
+  top: 20px;
+  margin: 0 2%;
+  overflow-y: scroll;
+  display: none;
+}
+
+.quickView.open {
+  display: block;
+}
+
+.quickView_banner {
+  position: relative;
+  padding-top: 50vh;
+  height: 50vh;
+  font-size: 1.5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.quickView_banner_title {
+  position: absolute;
+  left: 30px;
+  bottom: 100px;
+}
+
+.quickView_content {
+  padding: 1.5rem;
+  font-size: 1rem;
+}
+
+.quickView_close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  color: white;
+}
+
+.detail_buttons {
+  position: absolute;
+  z-index: 1;
+  top: 300px;
+  left: 10px;
+}
+
+@media screen and (min-width:768px) {
+  .quickView {
+    width: 50%;
+    left: 25%;
+    right: 25%;
+  }
+}
+
+.button_group {
+display: flex;
+align-items: center;
+}
+
+.thumb_up {
+  margin-left: 5px;
+  height: 30px;
+  width: 30px;
+  background: rgba(0,0,0, .2);
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.thumb_down {
+  margin-left: 5px;
+  height: 30px;
+  width: 30px;
+  background: rgba(0,0,0, .2);
+  border-radius: 50%;
+  border: 3px solid white;
+}

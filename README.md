@@ -53,3 +53,6 @@ You have to use MUI lib to build your interfaces.
 ![](Assets/serieEpList.png)
 ![](Assets/topshows.png)
 ![](Assets/whoswatching.png)
+
+## To do
+.env pour config firebase
